@@ -225,6 +225,6 @@ th {
 }
 td, th { 
   padding: inherit; 
-  border: 1px solid #ccc; 
-  text-align: left; 
+  text-align: left;
+  height: 45px; 
 }
