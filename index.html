@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Firmstep Developer Test</title>
+
+	<link rel="stylesheet" href="assets/form-basic.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+</head>
+
+
+	<header>
+		<h1 align="center">Queue App</h1>
+    </header>
+
+<div class="col span_1_of_2">
+    <div class="main-content">
+    	<div class="form-title-row">
+                <h2>New Customer</h2>
+        </div>
+
+        <!-- You only need this form and the form-basic.css -->
+       
+        <form class="form-basic" method="post" action="data.php">
+        	
+        	
+
+        	<!-- Services -->
+        	<div class="form-row">
+                <label><span>Services</span></label>
+                <div class="form-radio-buttons">
+
+                    <div>
+                        <label>
+                            <input type="radio" name="services" value="Housing" checked>
+                            <span>Housing</span>
+                        </label>
+                    </div>
+
+                    <div>
+                        <label>
+                            <input type="radio" name="services" value="Benefits">
+                            <span>Benefits</span>
+                        </label>
+                    </div>
+
+                    <div>
+                        <label>
+                            <input type="radio" name="services" value="Council Tax">
+                            <span>Council Tax</span>
+                        </label>
+                    </div>
+
+                    <div>
+                        <label>
+                            <input type="radio" name="services" value="Fly-tipping">
+                            <span>Fly-tipping</span>
+                        </label>
+                    </div>
+
+                    <div>
+                        <label>
+                            <input type="radio" name="services" value="Missed Bin">
+                            <span>Missed Bin</span>
+                        </label>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- Type -->
+        	<div class="form-row">
+                <label>
+                    <select name="type">
+                        <option>Citizen</option>
+                        <option>Organization</option>
+                        <option>Anonymous</option>
+                    </select>
+                </label>
+            </div>
+
+            <!-- Title -->
+            <div class="form-row">
+	            <label>
+	                    <span>Title</span>
+	                    <select name="title">
+	                        <option>Mr</option>
+	                        <option>Miss</option>
+	                        <option>Ms</option>
+	                    </select>
+	            </label>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span>First Name</span>
+                    <input type="text" name="firstname">
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span>Last Name</span>
+                    <input type="text" name="lastname">
+                </label>
+            </div>
+            			
+            <div class="form-row">
+                <button type="submit">Submit</button>
+            </div>
+
+        </form>
+
+    </div>
+</div>
+<div class="col span_1_of_2">
+	<div class="form-title-row">
+        <h2>Queue</h2>
+    </div>
+    <p>List of the customers being queued</p>
+	<div class="main-content">
+		<iframe src="table.php" width="100%" height="500" frameborder="0"></iframe>
+	</div>
+</div>
+
+
+</html>
